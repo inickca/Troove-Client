@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="" rel="stylesheet" type="text/css">
+	<style media="screen" type="text/css">
+
+	.car-img-div{
+	display:block;
+	padding-bottom:7px;
+	margin-bottom:22px;
+	font-weight:400;
+	font-size:17px;
+	color:#333;
+	font-weight:700;
+	text-align:left;
+}
+
+.body-type-widget li{
+	width:33.33%;
+	float:left;
+}
+.body-type-widget li span{
+	display:block;
+	font-size:12px;
+	font-family: 'Playfair Display', serif;
+	margin-top:4px;
+	font-style:italic;
+}
+.body-type-widget li img{
+	width:70%;
+}
+.body-type-widget .post-actions{
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight:400;
+  color:#999;
+}
+
+.bootstrap-select.form-control{
+	margin-bottom:20px!important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+</style>
+
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Troovez votre véhicule!</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="row">
+					<div class="col-md-12"> <span class="car-img-div">Type de véhicule</span>
+						<ul class="body-type-widget">
+							<li>
+								<a href="results-list.html"><img src="images/body-types/wagon.png" alt=""> <span>Wagon</span></a>
+							</li>
+							<li>
+								<a href="results-list.html"><img src="images/body-types/minivan.png" alt=""> <span>Minivan</span></a>
+							</li>
+							<li>
+								<a href="results-list.html"><img src="images/body-types/coupe.png" alt=""> <span>Coupe</span></a>
+							</li>
+							<li>
+								<a href="results-list.html"><img src="images/body-types/convertible.png" alt=""> <span>Convertible</span></a>
+							</li>
+							<li>
+								<a href="results-list.html"><img src="images/body-types/crossover.png" alt=""> <span>Crossover</span></a>
+							</li>
+							<li>
+								<a href="results-list.html"><img src="images/body-types/suv.png" alt=""> <span>SUV</span></a>
+							</li>
+						</ul>
+						<a href="results-list.html" class="basic-link">view all</a>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-12">
+					
+					</div>
+				</div>
+				<div class="row">
+				
+              						
+					
+					</div>
+				
+			</div>
+		
+			
+
+			<div class="col-md-3">
+		<div class="row">
+
+					<div class="col-md-12">
+						<label>Modèle</label>
+						<select name="Modele" class="form-control selectpicker" style="display: none;">
+				      <option selected="">Tous</option>
+				      <option>GTX</option>
+				      <option>GTR</option>
+				      <option>GTS</option>
+				      <option>RLX</option>
+				      <option>M6</option>
+				      <option>S Class</option>
+				      <option>C Class</option>
+				      <option>B Class</option>
+				      <option>A Class</option>
+			        </select>
+						<div class="btn-group bootstrap-select form-control">
+							<button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Tous"><span class="filter-option pull-left">Tous</span>&nbsp;<span class="caret"></span></button>
+							<div class="dropdown-menu open">
+								<ul class="dropdown-menu inner selectpicker" role="menu">
+									<li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">Tous</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="1"><a tabindex="0" class="" style=""><span class="text">GTX</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="2"><a tabindex="0" class="" style=""><span class="text">GTR</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="3"><a tabindex="0" class="" style=""><span class="text">GTS</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="4"><a tabindex="0" class="" style=""><span class="text">RLX</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="5"><a tabindex="0" class="" style=""><span class="text">M6</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="6"><a tabindex="0" class="" style=""><span class="text">S Class</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="7"><a tabindex="0" class="" style=""><span class="text">C Class</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="8"><a tabindex="0" class="" style=""><span class="text">B Class</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="9"><a tabindex="0" class="" style=""><span class="text">A Class</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+			
+
+				<div class="row">
+					<div class="col-md-12">
+						<label>Transmission</label>
+			<select name="Transmission" class="form-control selectpicker" style="display: none;">
+                                                <option selected="">Tous</option>
+                                                <option>5 Vitesse Manuelle</option>
+                                                <option>5 Vitesse Automatique</option>
+                                                <option>6 Vitesse Manuelle</option>
+                                                <option>6 Vitesse Automatique</option>
+                                                <option>7 Vitesse Manuelle</option>
+                                                <option>7 Vitesse Automatique</option>
+                                                <option>8 Vitesse Manuelle</option>
+                                                <option>8 Vitesse Automatique</option>
+                                            </select>
+			<div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Tous"><span class="filter-option pull-left">Tous</span>&nbsp;<span class="caret"></span></button>
+				<div
+								class="dropdown-menu open">
+					<ul class="dropdown-menu inner selectpicker" role="menu">
+						<li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">Tous</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+						<li
+										rel="1"><a tabindex="0" class="" style=""><span class="text">5 Vitesse Manuelle</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+							<li
+											rel="2"><a tabindex="0" class="" style=""><span class="text">5 Vitesse Automatique</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+								<li
+												rel="3"><a tabindex="0" class="" style=""><span class="text">6 Vitesse Manuelle</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li
+													rel="4"><a tabindex="0" class="" style=""><span class="text">6 Vitesse Automatique</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+										<li
+														rel="5"><a tabindex="0" class="" style=""><span class="text">7 Vitesse Manuelle</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+											<li
+															rel="6"><a tabindex="0" class="" style=""><span class="text">7 Vitesse Automatique</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+												<li
+																rel="7"><a tabindex="0" class="" style=""><span class="text">8 Vitesse Manuelle</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+													<li
+																	rel="8"><a tabindex="0" class="" style=""><span class="text">8 Vitesse Automatique</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+					</ul>
+			</div>
+		</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<label>Prix Max</label>
+					<select name="Max Prix" class="form-control selectpicker" style="display: none;">
+                                                <option selected="">Tous</option>
+                                                <option>$10000</option>
+                                                <option>$20000</option>
+                                                <option>$30000</option>
+                                                <option>$40000</option>
+                                                <option>$50000</option>
+                                                <option>$60000</option>
+                                                <option>$70000</option>
+                                                <option>$80000</option>
+                                                <option>$90000</option>
+                                                <option>$100000</option>
+                                            </select>
+					<div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Tous"><span class="filter-option pull-left">Tous</span>&nbsp;<span class="caret"></span></button>
+						<div
+										class="dropdown-menu open">
+							<ul class="dropdown-menu inner selectpicker" role="menu">
+								<li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">Tous</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+								<li
+												rel="1"><a tabindex="0" class="" style=""><span class="text">$10000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li
+													rel="2"><a tabindex="0" class="" style=""><span class="text">$20000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+										<li
+														rel="3"><a tabindex="0" class="" style=""><span class="text">$30000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+											<li
+															rel="4"><a tabindex="0" class="" style=""><span class="text">$40000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+												<li
+																rel="5"><a tabindex="0" class="" style=""><span class="text">$50000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+													<li
+																	rel="6"><a tabindex="0" class="" style=""><span class="text">$60000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+														<li
+																		rel="7"><a tabindex="0" class="" style=""><span class="text">$70000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+															<li
+																			rel="8"><a tabindex="0" class="" style=""><span class="text">$80000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+																<li
+																				rel="9"><a tabindex="0" class="" style=""><span class="text">$90000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+																	<li
+																					rel="10"><a tabindex="0" class="" style=""><span class="text">$100000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+							</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+			
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+
+	<div class="row">
+			<div class="col-md-12">
+					
+
+	<label>Constructeur</label>
+						<select name="Constructeur" class="form-control selectpicker" style="display: none;">
+				      <option selected="">Tous</option>
+				      <option>Jaguar</option>
+				      <option>BMW</option>
+				      <option>Mercedes</option>
+				      <option>Porsche</option>
+				      <option>Nissan</option>
+				      <option>Mazda</option>
+				      <option>Acura</option>
+				      <option>Audi</option>
+				      <option>Bugatti</option>
+			        </select>
+						<div class="btn-group bootstrap-select form-control">
+							<button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Tous"><span class="filter-option pull-left">Tous</span>&nbsp;<span class="caret"></span></button>
+							<div class="dropdown-menu open">
+								<ul class="dropdown-menu inner selectpicker" role="menu">
+									<li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">Tous</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="1"><a tabindex="0" class="" style=""><span class="text">Jaguar</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="2"><a tabindex="0" class="" style=""><span class="text">BMW</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="3"><a tabindex="0" class="" style=""><span class="text">Mercedes</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="4"><a tabindex="0" class="" style=""><span class="text">Porsche</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="5"><a tabindex="0" class="" style=""><span class="text">Nissan</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="6"><a tabindex="0" class="" style=""><span class="text">Mazda</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="7"><a tabindex="0" class="" style=""><span class="text">Acura</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="8"><a tabindex="0" class="" style=""><span class="text">Audi</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li rel="9"><a tabindex="0" class="" style=""><span class="text">Bugatti</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+
+
+
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+						<label>Min Année</label>
+				<select name="Min Année" class="form-control selectpicker" style="display: none;">
+                                                <option selected="">Tous</option>
+                                                <option>2005</option>
+                                                <option>2006</option>
+                                                <option>2007</option>
+                                                <option>2008</option>
+                                                <option>2009</option>
+                                                <option>2010</option>
+                                                <option>2011</option>
+                                                <option>2012</option>
+                                                <option>2013</option>
+                                                <option>2014</option>
+                                            </select>
+				<div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Tous"><span class="filter-option pull-left">Tous</span>&nbsp;<span class="caret"></span></button>
+					<div
+									class="dropdown-menu open">
+						<ul class="dropdown-menu inner selectpicker" role="menu">
+							<li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">Tous</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+							<li
+											rel="1"><a tabindex="0" class="" style=""><span class="text">2005</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+								<li
+												rel="2"><a tabindex="0" class="" style=""><span class="text">2006</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li
+													rel="3"><a tabindex="0" class="" style=""><span class="text">2007</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+										<li
+														rel="4"><a tabindex="0" class="" style=""><span class="text">2008</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+											<li
+															rel="5"><a tabindex="0" class="" style=""><span class="text">2009</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+												<li
+																rel="6"><a tabindex="0" class="" style=""><span class="text">2010</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+													<li
+																	rel="7"><a tabindex="0" class="" style=""><span class="text">2011</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+														<li
+																		rel="8"><a tabindex="0" class="" style=""><span class="text">2012</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+															<li
+																			rel="9"><a tabindex="0" class="" style=""><span class="text">2013</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+																<li
+																				rel="10"><a tabindex="0" class="" style=""><span class="text">2014</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+						</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+					<label>Max Année</label>
+			<select name="Max Année" class="form-control selectpicker" style="display: none;">
+                                                <option selected="">Tous</option>
+                                                <option>2005</option>
+                                                <option>2006</option>
+                                                <option>2007</option>
+                                                <option>2008</option>
+                                                <option>2009</option>
+                                                <option>2010</option>
+                                                <option>2011</option>
+                                                <option>2012</option>
+                                                <option>2013</option>
+                                                <option>2014</option>
+                                            </select>
+			<div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Tous"><span class="filter-option pull-left">Tous</span>&nbsp;<span class="caret"></span></button>
+				<div
+								class="dropdown-menu open">
+					<ul class="dropdown-menu inner selectpicker" role="menu">
+						<li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">Tous</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+						<li
+										rel="1"><a tabindex="0" class="" style=""><span class="text">2005</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+							<li
+											rel="2"><a tabindex="0" class="" style=""><span class="text">2006</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+								<li
+												rel="3"><a tabindex="0" class="" style=""><span class="text">2007</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li
+													rel="4"><a tabindex="0" class="" style=""><span class="text">2008</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+										<li
+														rel="5"><a tabindex="0" class="" style=""><span class="text">2009</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+											<li
+															rel="6"><a tabindex="0" class="" style=""><span class="text">2010</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+												<li
+																rel="7"><a tabindex="0" class="" style=""><span class="text">2011</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+													<li
+																	rel="8"><a tabindex="0" class="" style=""><span class="text">2012</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+														<li
+																		rel="9"><a tabindex="0" class="" style=""><span class="text">2013</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+															<li
+																			rel="10"><a tabindex="0" class="" style=""><span class="text">2014</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+					</ul>
+			</div>
+		</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="row">
+			<div class="col-md-12">
+					<label>Min Km</label>
+			<select name="Min Km" class="form-control selectpicker" style="display: none;">
+                                                <option selected="">Tous</option>
+                                                <option>10000</option>
+                                                <option>20000</option>
+                                                <option>30000</option>
+                                                <option>40000</option>
+                                                <option>50000</option>
+                                                <option>60000</option>
+                                                <option>70000</option>
+                                                <option>80000</option>
+                                                <option>90000</option>
+                                                <option>100000</option>
+                                            </select>
+			<div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Tous"><span class="filter-option pull-left">Tous</span>&nbsp;<span class="caret"></span></button>
+				<div
+								class="dropdown-menu open">
+					<ul class="dropdown-menu inner selectpicker" role="menu">
+						<li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">Tous</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+						<li
+										rel="1"><a tabindex="0" class="" style=""><span class="text">10000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+							<li
+											rel="2"><a tabindex="0" class="" style=""><span class="text">20000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+								<li
+												rel="3"><a tabindex="0" class="" style=""><span class="text">30000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li
+													rel="4"><a tabindex="0" class="" style=""><span class="text">40000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+										<li
+														rel="5"><a tabindex="0" class="" style=""><span class="text">50000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+											<li
+															rel="6"><a tabindex="0" class="" style=""><span class="text">60000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+												<li
+																rel="7"><a tabindex="0" class="" style=""><span class="text">70000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+													<li
+																	rel="8"><a tabindex="0" class="" style=""><span class="text">80000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+														<li
+																		rel="9"><a tabindex="0" class="" style=""><span class="text">90000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+															<li
+																			rel="10"><a tabindex="0" class="" style=""><span class="text">100000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+					</ul>
+			</div>
+		</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">	<label>Max Km</label>
+		<select name="Max Km" class="form-control selectpicker" style="display: none;">
+                                                <option selected="">Tous</option>
+                                                <option>10000</option>
+                                                <option>20000</option>
+                                                <option>30000</option>
+                                                <option>40000</option>
+                                                <option>50000</option>
+                                                <option>60000</option>
+                                                <option>70000</option>
+                                                <option>80000</option>
+                                                <option>90000</option>
+                                                <option>100000</option>
+                                            </select>
+		<div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Tous"><span class="filter-option pull-left">Tous</span>&nbsp;<span class="caret"></span></button>
+			<div
+							class="dropdown-menu open">
+				<ul class="dropdown-menu inner selectpicker" role="menu">
+					<li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">Tous</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+					<li
+									rel="1"><a tabindex="0" class="" style=""><span class="text">10000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+						<li
+										rel="2"><a tabindex="0" class="" style=""><span class="text">20000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+							<li
+											rel="3"><a tabindex="0" class="" style=""><span class="text">30000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+								<li
+												rel="4"><a tabindex="0" class="" style=""><span class="text">40000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li
+													rel="5"><a tabindex="0" class="" style=""><span class="text">50000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+										<li
+														rel="6"><a tabindex="0" class="" style=""><span class="text">60000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+											<li
+															rel="7"><a tabindex="0" class="" style=""><span class="text">70000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+												<li
+																rel="8"><a tabindex="0" class="" style=""><span class="text">80000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+													<li
+																	rel="9"><a tabindex="0" class="" style=""><span class="text">90000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+														<li
+																		rel="10"><a tabindex="0" class="" style=""><span class="text">100000</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+				</ul>
+		</div>
+	</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+					<label>Couleur</label>
+		<select name="Couleur" class="form-control selectpicker" style="display: none;">
+                                                <option selected="">Tous</option>
+                                                <option>Rouge</option>
+                                                <option>Noir</option>
+                                                <option>Blanc</option>
+                                                <option>Jaune</option>
+                                                <option>Brun</option>
+                                                <option>Gris</option>
+                                                <option>Argent</option>
+                                                <option>Or</option>
+                                            </select>
+		<div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Tous"><span class="filter-option pull-left">Tous</span>&nbsp;<span class="caret"></span></button>
+			<div
+							class="dropdown-menu open">
+				<ul class="dropdown-menu inner selectpicker" role="menu">
+					<li rel="0" class="selected"><a tabindex="0" class="" style=""><span class="text">Tous</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+					<li
+									rel="1"><a tabindex="0" class="" style=""><span class="text">Rouge</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+						<li
+										rel="2"><a tabindex="0" class="" style=""><span class="text">Noir</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+							<li
+											rel="3"><a tabindex="0" class="" style=""><span class="text">Blanc</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+								<li
+												rel="4"><a tabindex="0" class="" style=""><span class="text">Jaune</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+									<li
+													rel="5"><a tabindex="0" class="" style=""><span class="text">Brun</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+										<li
+														rel="6"><a tabindex="0" class="" style=""><span class="text">Gris</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+											<li
+															rel="7"><a tabindex="0" class="" style=""><span class="text">Argent</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+												<li
+																rel="8"><a tabindex="0" class="" style=""><span class="text">Or</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+				</ul>
+		</div>
+	</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+	<span class="input-group-btn">
+        <button class="btn btn-primary" type="submit">Troovez!</button>
+		</span>
+		</div>
+	</div>
+	</div>
+	
+	<script src="file:///SUPERMAN/Projet ƒ/Clients/troove/AutoStars-Responsive-Car-Dealership-Template/Template/js/jquery-1.11.3.min.js"></script>
+	<script src="file:///SUPERMAN/Projet ƒ/Clients/troove/AutoStars-Responsive-Car-Dealership-Template/Template/js/bootstrap.js"></script>
+</body>
+
+</html>
